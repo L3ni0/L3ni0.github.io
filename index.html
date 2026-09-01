@@ -3,84 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dominik Lenio — Data Engineer</title>
+  <title>Dominik Lenio — Freelance Data Engineer</title>
+  <meta name="description" content="Freelance Data Engineer specializing in Databricks and Azure. I help companies build reliable, maintainable cloud data platforms.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <div class="avatar">DL</div>
-      <h1>Dominik Lenio</h1>
-      <p class="title">Data Engineer</p>
-      <div class="contact">
-        <a href="mailto:dominiklenio@gmail.com">dominiklenio@gmail.com</a>
-        <span class="sep">&middot;</span>
-        <span>Wrocław, Poland</span>
-        <span class="sep">&middot;</span>
-        <a href="https://pl.linkedin.com/in/dominik-lenio-6767b623b" target="_blank" rel="noopener">LinkedIn</a>
-        <span class="sep">&middot;</span>
-        <a href="https://github.com/L3ni0" target="_blank" rel="noopener">GitHub</a>
-      </div>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">DL<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's talk</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h2>About</h2>
-      <p>
-        Data Engineer with strong expertise in Databricks and Azure. I build cloud
-        infrastructure using Bicep and manage Databricks projects with Databricks
-        Asset Bundles (DAB). Focused on DataOps practices for reliable, maintainable
-        data platforms.
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <p class="eyebrow">Freelance Data Engineer &middot; Databricks &amp; Azure</p>
+      <h1>Data engineering that ships — pipelines, cloud infrastructure, and dashboards teams can rely on.</h1>
+      <p class="hero-lead">
+        I partner with companies to design, build and maintain cloud data platforms —
+        from Databricks pipelines to Azure infrastructure to BI reporting, with DataOps
+        practices baked in from day one.
       </p>
-    </section>
-
-    <section class="section">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>Databricks</li>
-        <li>Azure</li>
-        <li>Azure Data Factory (ADF)</li>
-        <li>Python</li>
-        <li>Scala</li>
-        <li>Airflow</li>
-        <li>Docker</li>
-        <li>Power BI</li>
-        <li>Terraform <span class="badge">learning</span></li>
-        <li>Terragrunt <span class="badge">learning</span></li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Experience</h2>
-
-      <div class="job">
-        <h3>Data Engineer <span class="company">— Volvo</span></h3>
-        <ul>
-          <li>Built and maintained data pipelines in Databricks using Databricks Asset Bundles (DAB)</li>
-          <li>Maintained and migrated data between systems</li>
-          <li>Built Azure infrastructure using Bicep</li>
-          <li>Created unit tests for CI/CD</li>
-          <li>Took part in data modeling processes</li>
-          <li>Worked with Power BI, from creating dataflows to building pipelines and datasets</li>
-        </ul>
+      <div class="hero-cta">
+        <a href="mailto:dominiklenio@gmail.com" class="btn btn-primary btn-lg">Get in touch</a>
+        <a href="#clients" class="btn btn-secondary btn-lg">See client work</a>
       </div>
+      <div class="hero-meta">
+        <a href="https://pl.linkedin.com/in/dominik-lenio-6767b623b" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">&middot;</span>
+        <a href="https://github.com/L3ni0" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">&middot;</span>
+        <span>Wrocław, Poland</span>
+      </div>
+    </div>
+  </section>
 
-      <div class="job">
-        <h3>Data Engineer <span class="company">— Qiagen</span></h3>
-        <ul>
-          <li>Built and maintained data pipelines in Databricks using Databricks Asset Bundles (DAB)</li>
-          <li>Maintained and migrated data between systems</li>
-          <li>Built Azure infrastructure using Bicep</li>
-          <li>Data modeling</li>
+  <section class="trusted">
+    <div class="container trusted-inner">
+      <p class="trusted-label">Trusted by teams at</p>
+      <div class="trusted-logos">
+        <span>Volvo</span>
+        <span>Qiagen</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-tag">About</p>
+        <h2>Focused on reliable, maintainable data platforms</h2>
+        <p class="section-lead">
+          I'm a data engineer working with companies to build and run their cloud data
+          platforms end to end. I build cloud infrastructure using Bicep and manage
+          Databricks projects with Databricks Asset Bundles (DAB) — always with an eye
+          on DataOps practices that keep pipelines reliable long after launch.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <p class="section-tag">Services</p>
+        <h2>What I can help with</h2>
+        <div class="grid-cards">
+          <div class="card">
+            <div class="card-icon">01</div>
+            <h3>Data Pipeline Engineering</h3>
+            <p>Design and build reliable, production-grade pipelines in Databricks using Databricks Asset Bundles (DAB).</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">02</div>
+            <h3>Cloud Infrastructure</h3>
+            <p>Provision and manage Azure infrastructure as code with Bicep, so environments stay consistent and reproducible.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">03</div>
+            <h3>DataOps &amp; CI/CD</h3>
+            <p>Set up unit testing and CI/CD pipelines so changes ship safely and platforms stay maintainable over time.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">04</div>
+            <h3>Data Modeling</h3>
+            <p>Design data models that scale with the business and hold up as data volume and complexity grow.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">05</div>
+            <h3>Migrations</h3>
+            <p>Plan and execute data migrations between systems with a focus on integrity and minimal downtime.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">06</div>
+            <h3>BI &amp; Reporting</h3>
+            <p>Deliver Power BI solutions end to end — from dataflows to pipelines to the datasets stakeholders rely on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="clients">
+      <div class="container">
+        <p class="section-tag">Clients</p>
+        <h2>Selected client work</h2>
+
+        <div class="client">
+          <div class="client-head">
+            <h3>Volvo</h3>
+            <span class="client-tag">Data Engineering Engagement</span>
+          </div>
+          <ul>
+            <li>Designed and maintained production data pipelines in Databricks using Databricks Asset Bundles (DAB)</li>
+            <li>Led migration of data between systems</li>
+            <li>Provisioned Azure infrastructure as code using Bicep</li>
+            <li>Introduced unit tests to strengthen CI/CD reliability</li>
+            <li>Contributed to data modeling decisions for downstream analytics</li>
+            <li>Delivered Power BI solutions — from dataflows to pipelines and datasets</li>
+          </ul>
+        </div>
+
+        <div class="client">
+          <div class="client-head">
+            <h3>Qiagen</h3>
+            <span class="client-tag">Data Engineering Engagement</span>
+          </div>
+          <ul>
+            <li>Built and maintained data pipelines in Databricks using Databricks Asset Bundles (DAB)</li>
+            <li>Managed data migration between systems</li>
+            <li>Provisioned Azure infrastructure using Bicep</li>
+            <li>Supported data modeling initiatives</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-tag">Skills</p>
+        <h2>Tools &amp; technologies</h2>
+        <ul class="skills">
+          <li>Databricks</li>
+          <li>Azure</li>
+          <li>Azure Data Factory (ADF)</li>
+          <li>Python</li>
+          <li>Scala</li>
+          <li>Airflow</li>
+          <li>Docker</li>
+          <li>Power BI</li>
+          <li>Terraform <span class="badge">learning</span></li>
+          <li>Terragrunt <span class="badge">learning</span></li>
         </ul>
       </div>
     </section>
   </main>
 
+  <section class="cta" id="contact">
+    <div class="container cta-inner">
+      <h2>Let's build something reliable.</h2>
+      <p>Available for freelance data engineering projects and consulting.</p>
+      <a href="mailto:dominiklenio@gmail.com" class="btn btn-primary btn-lg">dominiklenio@gmail.com</a>
+    </div>
+  </section>
+
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>&copy; 2026 Dominik Lenio</p>
+      <div class="footer-links">
+        <a href="mailto:dominiklenio@gmail.com">Email</a>
+        <a href="https://pl.linkedin.com/in/dominik-lenio-6767b623b" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/L3ni0" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </footer>
 </body>
